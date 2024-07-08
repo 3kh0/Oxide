@@ -9,4 +9,4 @@ pnpm install
 pnpm start
 ```
 
-Yes it is that simple
+Yes, it is that simple.

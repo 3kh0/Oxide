@@ -3,20 +3,14 @@ const address = document.getElementById("uv-address");
 const searchEngine = document.getElementById("uv-search-engine");
 const error = document.getElementById("uv-error");
 const errorCode = document.getElementById("uv-error-code");
-form.addEventListener("submit", async (event) => {
-  event.preventDefault();
+form.addEventListener("submit", async (e) => {
+    e.preventDefault();
 
-  try {
-    await registerSW();
-  } catch (err) {
-    error.textContent = "Failed to register service worker.";
-    errorCode.textContent = err.toString();
-    throw err;
-  }
+    if (window.chemicalLoaded) {
+        const url = search(address.value, searchEngine.value);
 
-  const url = search(address.value, searchEngine.value);
-
-  let frame = document.getElementById("uv-frame");
-  frame.style.display = "block";
-  frame.src = __uv$config.prefix + __uv$config.encodeUrl(url);
+        let frame = document.getElementById("uv-frame");
+        frame.style.display = "block";
+        frame.src = window.chemicalEncode(url);
+    }
 });
