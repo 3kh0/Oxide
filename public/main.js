@@ -11,6 +11,6 @@ form.addEventListener("submit", async (e) => {
 
         let frame = document.getElementById("uv-frame");
         frame.style.display = "block";
-        frame.src = window.chemicalEncode(url);
+        frame.src = await window.chemicalEncode(url);
     }
 });

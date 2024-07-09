@@ -1,7 +1,11 @@
 import { ChemicalServer } from "chemicaljs";
 import express from "express";
 
-const chemical = new ChemicalServer();
+const chemical = new ChemicalServer({
+    uv: true,
+    scramjet: false,
+    rammerhead: false
+});
 const port = process.env.PORT || 8080;
 
 chemical.app.use(express.static("public", {
