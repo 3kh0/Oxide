@@ -1,19 +1,15 @@
 {
   "name": "oxide",
   "version": "0.3",
-  "description": "Oxide",
+  "description": " No tracking, no useless stuff, just a dead simple proxy. ",
   "author": "3kh0",
+  "license": "MIT",
   "type": "module",
   "scripts": {
     "start": "node index.js"
   },
   "dependencies": {
-    "@mercuryworkshop/bare-mux": "^1.1.4",
-    "@mercuryworkshop/epoxy-transport": "^1.1.0",
-    "@titaniumnetwork-dev/ultraviolet": "^3.1.5",
-    "express": "^4.19.2",
-    "express-minify": "^1.0.0",
-    "wisp-server-node": "^1.1.0",
-    "ws": "^8.18.0"
+    "chemicaljs": "^1.2.3",
+    "express": "^4.19.2"
   }
 }
