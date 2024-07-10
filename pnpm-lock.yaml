@@ -170,11 +170,11 @@ packages:
   '@mercuryworkshop/bare-mux@2.0.0':
     resolution: {integrity: sha512-SKhWdP1T5QxPXHFxblc0vdXXrRF//e+Q2XsFY0G+EvKh8Md7UTLafZQcdOgM1KBpp9IybVKizIJMwnZoK5iMzg==}
 
-  '@mercuryworkshop/epoxy-tls@2.0.4-1':
-    resolution: {integrity: sha512-tAln8V0Ct84WHL2hXnBibFNw3YhxJ9h2X4q83hgx7UNAOMrbs5qfibkeZVaH1TMVP4NUH9gu3YNk3KrLtSkjrg==}
+  '@mercuryworkshop/epoxy-tls@2.0.4-2':
+    resolution: {integrity: sha512-I/lHt4Q49SB+p5yurQtND6HngqkIYucaA2iz5Yq/gamG+X6ZffqcheNHgNAT7/Hqyzqbm8aWpoHSbFQysfkw5A==}
 
-  '@mercuryworkshop/epoxy-transport@2.1.0':
-    resolution: {integrity: sha512-W+pbUsSlK0A7fVGKRgCUda1I16WTcQPMpdAo5GADHmAHb5LuYxAuHYZHs2Hwkz4nQjayz3frBgxMGcvBLcjU1A==}
+  '@mercuryworkshop/epoxy-transport@2.1.1':
+    resolution: {integrity: sha512-hs3Za/PbAf/p9iQUxynj5btoW7tEBhidQtz/k7dnCxKeIFDFv+YCw0TCtog2zvU293sG7qIzBZfw7gTxtWEzdA==}
 
   '@mercuryworkshop/scramjet@1.0.2':
     resolution: {integrity: sha512-65k+TXYlMAnqTrcTyVlXyG+CVymOSHMW4a8ofJtX6yHDKmWGHL4LVzls+ukoTqth6JyqOk7OoT3iQdufZMoE7g==}
@@ -1480,11 +1480,11 @@ snapshots:
 
   '@mercuryworkshop/bare-mux@2.0.0': {}
 
-  '@mercuryworkshop/epoxy-tls@2.0.4-1': {}
+  '@mercuryworkshop/epoxy-tls@2.0.4-2': {}
 
-  '@mercuryworkshop/epoxy-transport@2.1.0(typescript@5.5.3)':
+  '@mercuryworkshop/epoxy-transport@2.1.1(typescript@5.5.3)':
     dependencies:
-      '@mercuryworkshop/epoxy-tls': 2.0.4-1
+      '@mercuryworkshop/epoxy-tls': 2.0.4-2
       esbuild-plugin-umd-wrapper: 2.0.0
       rollup: 4.18.1
       rollup-plugin-node-resolve: 5.2.0(rollup@4.18.1)
@@ -1758,7 +1758,7 @@ snapshots:
   chemicaljs@1.2.3(bufferutil@4.0.8)(esbuild@0.23.0)(typescript@5.5.3)(utf-8-validate@6.0.4):
     dependencies:
       '@mercuryworkshop/bare-mux': 2.0.0
-      '@mercuryworkshop/epoxy-transport': 2.1.0(typescript@5.5.3)
+      '@mercuryworkshop/epoxy-transport': 2.1.1(typescript@5.5.3)
       '@mercuryworkshop/scramjet': 1.0.2(esbuild@0.23.0)
       '@titaniumnetwork-dev/ultraviolet': 3.2.0
       express: 4.19.2
