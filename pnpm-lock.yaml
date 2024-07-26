@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       chemicaljs:
-        specifier: ^1.2.3
-        version: 1.2.3(bufferutil@4.0.8)(esbuild@0.23.0)(typescript@5.5.3)(utf-8-validate@6.0.4)
+        specifier: ^1.5.0
+        version: 1.5.0(bufferutil@4.0.8)(esbuild@0.23.0)(typescript@5.5.3)(utf-8-validate@6.0.4)
       express:
         specifier: ^4.19.2
         version: 4.19.2
@@ -167,17 +167,23 @@ packages:
   '@mercuryworkshop/bare-mux@1.1.4':
     resolution: {integrity: sha512-mJPezqEpiKTCs+wu/3TowilnVXQgFs4SqoQnnbCbOc5cV6bDggaolKkyYjDnmOB9t/nptIIXDWDB31oS9vX9kA==}
 
-  '@mercuryworkshop/bare-mux@2.0.0':
-    resolution: {integrity: sha512-SKhWdP1T5QxPXHFxblc0vdXXrRF//e+Q2XsFY0G+EvKh8Md7UTLafZQcdOgM1KBpp9IybVKizIJMwnZoK5iMzg==}
+  '@mercuryworkshop/bare-mux@2.0.4':
+    resolution: {integrity: sha512-Y5jByKQ/5ZhyKd3adHUQ18nB+HOUpopxRXIJh6KHXEq4rkG2AazHyMm42dvtAxHvkKlHkLxR7/5oxKZSD6rE4A==}
 
-  '@mercuryworkshop/epoxy-tls@2.0.4-2':
-    resolution: {integrity: sha512-I/lHt4Q49SB+p5yurQtND6HngqkIYucaA2iz5Yq/gamG+X6ZffqcheNHgNAT7/Hqyzqbm8aWpoHSbFQysfkw5A==}
+  '@mercuryworkshop/epoxy-tls@2.0.6-1':
+    resolution: {integrity: sha512-sirpgUiIO6gxjvoI+QDRebsWEgutHiMbV5ghx2Q39IkfGqYNFinaMIDZRno8yY4IZCxydf9KAo/V+1xEMwvJ+w==}
 
-  '@mercuryworkshop/epoxy-transport@2.1.1':
-    resolution: {integrity: sha512-hs3Za/PbAf/p9iQUxynj5btoW7tEBhidQtz/k7dnCxKeIFDFv+YCw0TCtog2zvU293sG7qIzBZfw7gTxtWEzdA==}
+  '@mercuryworkshop/epoxy-transport@2.1.3':
+    resolution: {integrity: sha512-cxuaPCVUmGnB1c/8cdoyhTIrZfL5feqH/sZRclkj8wFmrGz4PzzOHZRNMOrlzNoEiJDPYqHC4qJ6mNuiPC4vCw==}
+
+  '@mercuryworkshop/libcurl-transport@1.3.7':
+    resolution: {integrity: sha512-Ef2BpZRPzkWaCf6FDv63uYyocz96sIwbScI2GrU/Oiu5Etyyq5bOo0mA6sHh8KCwioFSulvh61lO2MbfaEzH9g==}
 
   '@mercuryworkshop/scramjet@1.0.2':
     resolution: {integrity: sha512-65k+TXYlMAnqTrcTyVlXyG+CVymOSHMW4a8ofJtX6yHDKmWGHL4LVzls+ukoTqth6JyqOk7OoT3iQdufZMoE7g==}
+
+  '@mercuryworkshop/wisp-js@0.1.1':
+    resolution: {integrity: sha512-mpsoKteEPkuY6uGGY6B73lU+EBGMlh/A39yXG4hNKzV6FZZ9CWmq3bAREmsLqA8adK/Y+OV8MkYWBEaRJHVhTw==}
 
   '@npmcli/fs@1.1.1':
     resolution: {integrity: sha512-8KG5RD0GVP4ydEzRn/I4BNDuxDtqVbOdm8675T49OIG/NGhaK0pjPX7ZcDlvKYbA+ulvVK3ztfcF4uBdOxuJbQ==}
@@ -271,8 +277,8 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@titaniumnetwork-dev/ultraviolet@3.2.0':
-    resolution: {integrity: sha512-Tz7VMOK3UbQRCdKPm/UHdIOIMvF93/pGntk6fWFPiEcTG4YUg2T0rBKsa8mvwY31IYEirY4JLglgG7Ogrf8p/w==}
+  '@titaniumnetwork-dev/ultraviolet@3.2.6':
+    resolution: {integrity: sha512-kMyUdXBWKIOjO/0sGlj/uTNjNK2/3dn+gnhlBTs/CB3EPUPD+DAKnH99yYqBs0R+YE0Hjm54pCyBHY7ztq6iOQ==}
 
   '@tootallnate/once@1.1.2':
     resolution: {integrity: sha512-RbzJvlNzmRq5c3O09UipeuXno4tA1FE6ikOjxZK0tuxVv3412l64l5t1W5pj4+rJq9vpkm/kwiR07aZXnsKPxw==}
@@ -416,8 +422,8 @@ packages:
   callsite@1.0.0:
     resolution: {integrity: sha512-0vdNRFXn5q+dtOqjfFtmtlI9N2eVZ7LMyEV2iKC5mEEFvSg/69Ml6b/WU2qF8W1nLRa0wiSrDT3Y5jOHZCwKPQ==}
 
-  chemicaljs@1.2.3:
-    resolution: {integrity: sha512-vWGxUB2cPtZnvWTGpe4Ihcc8TJA1Nhhmj++CC+4KGFOftYTDqaFl7Xk+hYhNmXSi/TLgSMkvqnT7v5DI7A3HXQ==}
+  chemicaljs@1.5.0:
+    resolution: {integrity: sha512-kDNm1OZfKEVQgaUv2dANM75/9Eg3xKzkKQ1C7tZT745sHEMYmRhRP98uHpLpVsmtfvE0hULN1U97KifPuWDxTg==}
 
   chownr@1.1.4:
     resolution: {integrity: sha512-jJ0bqzaylmJtVnNgzTeSOs8DPavpbYgEr/b0YL8/2GO3xJEhInFmhKMUnEJQjZumK7KXGFhUy89PrsJWlakBVg==}
@@ -807,6 +813,9 @@ packages:
   keyv-lru-files@https://codeload.github.com/holy-unblocker/keyv-lru-files/tar.gz/dceb102630357eda76317f9005905bbc5e6521e7:
     resolution: {tarball: https://codeload.github.com/holy-unblocker/keyv-lru-files/tar.gz/dceb102630357eda76317f9005905bbc5e6521e7}
     version: 1.3.1
+
+  libcurl.js@0.6.11:
+    resolution: {integrity: sha512-mCYCfjb5hnThNq0qzKPDUCRnHkDZENpCqGZ1flh4npu+zqWGun2/gsDmXCi+0J3TOsCDjmyMEt+W/eGNvqEHvQ==}
 
   locate-path@5.0.0:
     resolution: {integrity: sha512-t7hw9pI+WvuwNJXwk5zVHpyhIqzg2qTlklJOf0mVxGSbe3Fp2VieZcduNYjaLDoy6p9uGpQEGWG87WpMKlNq8g==}
@@ -1375,9 +1384,6 @@ packages:
   wide-align@1.1.5:
     resolution: {integrity: sha512-eDMORYaPNZ4sQIuuYPDHdQvf4gyCF9rEEV/yPxGfwPkRodwEgiMUUXTx/dex+Me0wxx53S+NgUHaP7y3MGlDmg==}
 
-  wisp-server-node@1.1.0:
-    resolution: {integrity: sha512-kJcuDIZZfV/HOkTepoVLfwzP7IieE0GfU57UTe8z2IwNRp+YbL12q5xsImcMNEYb9QeP/8loXiyBKXdZ+vojow==}
-
   wrappy@1.0.2:
     resolution: {integrity: sha512-l4Sp/DRseor9wL6EvV2+TuQn63dMkPjZ/sp9XkghTEbV9KlPS1xUsZ3u7/IQO4wxtcFB4bgpQPRcR3QCvezPcQ==}
 
@@ -1478,14 +1484,24 @@ snapshots:
       '@types/uuid': 9.0.8
       uuid: 9.0.1
 
-  '@mercuryworkshop/bare-mux@2.0.0': {}
+  '@mercuryworkshop/bare-mux@2.0.4': {}
 
-  '@mercuryworkshop/epoxy-tls@2.0.4-2': {}
+  '@mercuryworkshop/epoxy-tls@2.0.6-1': {}
 
-  '@mercuryworkshop/epoxy-transport@2.1.1(typescript@5.5.3)':
+  '@mercuryworkshop/epoxy-transport@2.1.3(typescript@5.5.3)':
     dependencies:
-      '@mercuryworkshop/epoxy-tls': 2.0.4-2
+      '@mercuryworkshop/epoxy-tls': 2.0.6-1
       esbuild-plugin-umd-wrapper: 2.0.0
+      rollup: 4.18.1
+      rollup-plugin-node-resolve: 5.2.0(rollup@4.18.1)
+      rollup-plugin-typescript2: 0.36.0(rollup@4.18.1)(typescript@5.5.3)
+    transitivePeerDependencies:
+      - typescript
+
+  '@mercuryworkshop/libcurl-transport@1.3.7(typescript@5.5.3)':
+    dependencies:
+      esbuild-plugin-umd-wrapper: 2.0.0
+      libcurl.js: 0.6.11
       rollup: 4.18.1
       rollup-plugin-node-resolve: 5.2.0(rollup@4.18.1)
       rollup-plugin-typescript2: 0.36.0(rollup@4.18.1)(typescript@5.5.3)
@@ -1506,6 +1522,13 @@ snapshots:
       meriyah: 4.5.0
     transitivePeerDependencies:
       - esbuild
+
+  '@mercuryworkshop/wisp-js@0.1.1(utf-8-validate@6.0.4)':
+    dependencies:
+      bufferutil: 4.0.8
+      ws: 8.18.0(bufferutil@4.0.8)(utf-8-validate@6.0.4)
+    transitivePeerDependencies:
+      - utf-8-validate
 
   '@npmcli/fs@1.1.1':
     dependencies:
@@ -1572,7 +1595,7 @@ snapshots:
   '@rollup/rollup-win32-x64-msvc@4.18.1':
     optional: true
 
-  '@titaniumnetwork-dev/ultraviolet@3.2.0': {}
+  '@titaniumnetwork-dev/ultraviolet@3.2.6': {}
 
   '@tootallnate/once@1.1.2':
     optional: true
@@ -1755,15 +1778,16 @@ snapshots:
 
   callsite@1.0.0: {}
 
-  chemicaljs@1.2.3(bufferutil@4.0.8)(esbuild@0.23.0)(typescript@5.5.3)(utf-8-validate@6.0.4):
+  chemicaljs@1.5.0(bufferutil@4.0.8)(esbuild@0.23.0)(typescript@5.5.3)(utf-8-validate@6.0.4):
     dependencies:
-      '@mercuryworkshop/bare-mux': 2.0.0
-      '@mercuryworkshop/epoxy-transport': 2.1.1(typescript@5.5.3)
+      '@mercuryworkshop/bare-mux': 2.0.4
+      '@mercuryworkshop/epoxy-transport': 2.1.3(typescript@5.5.3)
+      '@mercuryworkshop/libcurl-transport': 1.3.7(typescript@5.5.3)
       '@mercuryworkshop/scramjet': 1.0.2(esbuild@0.23.0)
-      '@titaniumnetwork-dev/ultraviolet': 3.2.0
+      '@mercuryworkshop/wisp-js': 0.1.1(utf-8-validate@6.0.4)
+      '@titaniumnetwork-dev/ultraviolet': 3.2.6
       express: 4.19.2
       rammerhead: https://github.com/chemicaljs/chemical/raw/main/rammerhead.tgz(bufferutil@4.0.8)(utf-8-validate@6.0.4)
-      wisp-server-node: 1.1.0
     transitivePeerDependencies:
       - bluebird
       - bufferutil
@@ -2201,6 +2225,8 @@ snapshots:
     transitivePeerDependencies:
       - bluebird
       - supports-color
+
+  libcurl.js@0.6.11: {}
 
   locate-path@5.0.0:
     dependencies:
@@ -2844,6 +2870,7 @@ snapshots:
   utf-8-validate@6.0.4:
     dependencies:
       node-gyp-build: 4.8.1
+    optional: true
 
   util-deprecate@1.0.2: {}
 
@@ -2866,12 +2893,6 @@ snapshots:
     dependencies:
       string-width: 4.2.3
     optional: true
-
-  wisp-server-node@1.1.0:
-    dependencies:
-      bufferutil: 4.0.8
-      utf-8-validate: 6.0.4
-      ws: 8.18.0(bufferutil@4.0.8)(utf-8-validate@6.0.4)
 
   wrappy@1.0.2: {}
 

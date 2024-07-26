@@ -2,10 +2,10 @@ import { ChemicalServer } from "chemicaljs";
 import express from "express";
 
 const chemical = new ChemicalServer({
-  uv: true,
   scramjet: false,
   rammerhead: false,
 });
+
 const port = process.env.PORT || 8080;
 
 chemical.app.use(
@@ -21,5 +21,5 @@ chemical.app.use((req, res) => {
 });
 
 chemical.server.listen(port, () => {
-  console.log(`Listening on port ${port}`);
+  console.log(`Oxide listening on port ${port}`);
 });
