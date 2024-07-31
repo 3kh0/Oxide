@@ -15,5 +15,5 @@ chemical.error((req, res) => {
 });
 
 chemical.listen(port, () => {
-    console.log(`Chemical demo listening on port ${port}`);
+    console.log(`Oxide listening on port ${port}`);
 });
