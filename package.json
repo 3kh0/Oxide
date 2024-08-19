@@ -9,7 +9,7 @@
     "start": "node index.js"
   },
   "dependencies": {
-    "chemicaljs": "^1.6.3",
+    "chemicaljs": "^1.6.5",
     "express": "^4.19.2"
   }
 }
