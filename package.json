@@ -1,6 +1,6 @@
 {
   "name": "oxide",
-  "version": "0.3",
+  "version": "0.6",
   "description": " No tracking, no useless stuff, just a dead simple proxy. ",
   "author": "3kh0",
   "license": "MIT",
@@ -9,7 +9,7 @@
     "start": "node index.js"
   },
   "dependencies": {
-    "chemicaljs": "^1.6.5",
+    "chemicaljs": "^1.8.2",
     "express": "^4.19.2"
   }
 }

@@ -1,5 +1,7 @@
 # Oxide
 
+![Oxide](oxide.png)
+
 No tracking, no bullshit, just a dead simple proxy.
 
 ## Usage

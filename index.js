@@ -1,21 +1,29 @@
 import { ChemicalServer } from "chemicaljs";
 import express from "express";
 
-const chemical = new ChemicalServer();
-const port = process.env.PORT || 8080;
+const [app, listen] = new ChemicalServer({
+  default: "uv",
+  uv: true,
+  scramjet: false,
+  meteor: false,
+  rammerhead: false,
+});
+const port = process.env.PORT || 3000;
 
-chemical.use(
+app.use(
   express.static("public", {
     index: "index.html",
     extensions: ["html"],
   })
 );
 
-chemical.error((req, res) => {
+app.serveChemical();
+
+app.use((res) => {
   res.status(404);
   res.send("404 Error");
 });
 
-chemical.listen(port, () => {
-  console.log(`Oxide listening on port ${port}`);
+listen(port, () => {
+  console.log(`Oxide locked and loaded at http://localhost:${port}`);
 });
