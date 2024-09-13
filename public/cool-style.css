@@ -1,47 +1,80 @@
-/* Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-
-/* General Styles */
-:root {
-  --text-color: #e0f7fa; /* Baby blue */
-  --back-color: #1a237e; /* Dark blue */
-}
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
 
 body {
   margin: 0;
   padding: 0;
-  color: var(--text-color);
-  background-color: var(--back-color);
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
+  background-color: #02001a;
+  color: #e1e1e1;
+  overflow: hidden;
   transition: background-color 0.5s, color 0.5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  opacity: 0;
+  animation: fadeIn 1s forwards, slideDown 1s forwards;
 }
 
-a:link, a:visited {
-  color: var(--text-color);
-  cursor: pointer;
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideDown {
+  from { transform: translateY(-50%); }
+  to { transform: translateY(0); }
+}
+
+h1, h2, h4, p, a, span {
+  text-shadow: 0 0 3px #e1e1e1;
+  color: #e1e1e1;
+}
+
+input[type="text"] {
+  background-color: #08001a;
+  color: #e1e1e1;
+  border: none;
+  padding: 8px;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
+  font-family: 'Ubuntu', sans-serif;
+  transition: all 0.4s ease;
+  box-sizing: border-box;
+}
+
+input[type="text"]:focus {
+  width: 100%;
+  height: auto;
+  background-color: #3d008b;
+  padding: 12px;
+  border-radius: 12px;
+}
+
+a {
+  color: #ede3ff;
   text-decoration: none;
-  transition: color 0.3s;
 }
 
-a:hover, span:hover {
-  text-decoration: underline;
+.btn {
+  background: #1c2b32;
+  padding: 10px;
+  color: #e1e1e1;
+  border-radius: 3px;
+  transition: background-color 0.4s cubic-bezier(0.25, 0.8, 0.25, 1), transform 0.4s cubic-bezier(0.25, 0.8, 0.25, 1), padding 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
-/* Bloom Effect */
-h1, h2, h4, p {
-  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+.btn:hover {
+  background: #A0C8DB;
+  transform: scale(1.05);
+  padding: 12px 22px;
 }
 
-/* Gradient Text */
-h1, h2, h4, p {
-  background: linear-gradient(45deg, #e0f7fa, #ffffff);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: gradientShift 5s ease infinite;
+.container {
+  animation: fade-in 1s ease-in-out;
 }
 
-/* Animation */
-@keyframes gradientShift {
-  0% { background-position: 0% 0%; }
-  100% { background-position: 100% 100%; }
+@keyframes fade-in {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
 }
