@@ -66,3 +66,43 @@ cfgDarkTog.addEventListener("click", function () {
     cfgDarkTog.textContent = "Dark mode";
   }
 });
+
+// Cool Style stuf 
+let cfgCoolStyleTog = document.getElementById("cfgCoolStyle");
+let cfgCoolStyle = localStorage.getItem("cfgCoolStyle");
+
+if (cfgCoolStyle === "true") {
+  document.documentElement.classList.add("cool-style");
+  cfgCoolStyleTog.textContent = "Default Style";
+}
+
+cfgCoolStyleTog.addEventListener("click", function () {
+  cfgCoolStyle = localStorage.getItem("cfgCoolStyle");
+  if (cfgCoolStyle !== "true") {
+    document.documentElement.classList.add("cool-style");
+    localStorage.setItem("cfgCoolStyle", "true");
+    cfgCoolStyleTog.textContent = "Default Style";
+  } else {
+    document.documentElement.classList.remove("cool-style");
+    localStorage.setItem("cfgCoolStyle", "false");
+    cfgCoolStyleTog.textContent = "Cool Style";
+  }
+});
+
+// toggle the cool style
+let link = document.createElement('link');
+link.rel = 'stylesheet';
+link.href = 'cool-style.css';
+link.id = 'coolStyleSheet';
+
+if (cfgCoolStyle === "true") {
+  document.head.appendChild(link);
+}
+
+cfgCoolStyleTog.addEventListener("click", function () {
+  if (cfgCoolStyle !== "true") {
+    document.head.appendChild(link);
+  } else {
+    document.head.removeChild(link);
+  }
+});
