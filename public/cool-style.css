@@ -1,0 +1,47 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* General Styles */
+:root {
+  --text-color: #e0f7fa; /* Baby blue */
+  --back-color: #1a237e; /* Dark blue */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: var(--text-color);
+  background-color: var(--back-color);
+  font-family: 'Roboto', sans-serif;
+  transition: background-color 0.5s, color 0.5s;
+}
+
+a:link, a:visited {
+  color: var(--text-color);
+  cursor: pointer;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+a:hover, span:hover {
+  text-decoration: underline;
+}
+
+/* Bloom Effect */
+h1, h2, h4, p {
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+}
+
+/* Gradient Text */
+h1, h2, h4, p {
+  background: linear-gradient(45deg, #e0f7fa, #ffffff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientShift 5s ease infinite;
+}
+
+/* Animation */
+@keyframes gradientShift {
+  0% { background-position: 0% 0%; }
+  100% { background-position: 100% 100%; }
+}
